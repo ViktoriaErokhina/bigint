@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Viktoria/Desktop/bigint/big_integer.cpp
+iostream
+-
+big_integer.h
+/Users/Viktoria/Desktop/bigint/big_integer.h
+
+/Users/Viktoria/Desktop/bigint/big_integer.h
+cstddef
+-
+vector
+-
+
+/Users/Viktoria/Desktop/bigint/main.cpp
+stdio.h
+-
+iostream
+-
+big_integer.h
+/Users/Viktoria/Desktop/bigint/big_integer.h
+

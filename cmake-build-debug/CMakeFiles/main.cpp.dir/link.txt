@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -Wall -std=c++11 -pedantic -g -fsanitize=address -D_GLIBCXX_DEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/main.cpp.dir/big_integer.cpp.o  -o main.cpp  

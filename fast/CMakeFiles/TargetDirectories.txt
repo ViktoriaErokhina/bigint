@@ -1,0 +1,3 @@
+/Users/Viktoria/Desktop/bigint/fast/CMakeFiles/rebuild_cache.dir
+/Users/Viktoria/Desktop/bigint/fast/CMakeFiles/edit_cache.dir
+/Users/Viktoria/Desktop/bigint/fast/CMakeFiles/big_integer_testing.dir
