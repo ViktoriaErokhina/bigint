@@ -135,6 +135,8 @@ vector
 /Users/Viktoria/Desktop/bigint/big_integer.cpp
 iostream
 -
+string
+-
 cassert
 -
 math.h

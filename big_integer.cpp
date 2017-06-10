@@ -261,8 +261,9 @@ big_integer &big_integer::operator+=(big_integer const &rhs) {
     if (capacity == 1) {
         cancel_small(rhs.capacity + 2);
     }
+    make_copy();
     if (rhs.capacity == 1) {
-        if (sign * ((rhs.value < 0) ? -1 : 1)) {
+        if (sign * ((rhs.value < 0) ? -1 : 1) > 0) {
             ensure_capacity(size + 1);
             add_small(rhs.value);
             return *this;
@@ -273,7 +274,6 @@ big_integer &big_integer::operator+=(big_integer const &rhs) {
             return *this;
         }
     }
-    make_copy();
     if (sign * rhs.sign > 0) {
         return add(rhs);
     } else {
@@ -397,8 +397,9 @@ big_integer &big_integer::operator-=(big_integer const &rhs) {
     if (capacity == 1) {
         cancel_small(rhs.capacity + 2);
     }
+    make_copy();
     if (rhs.capacity == 1) {
-        if (sign * ((rhs.value < 0) ? -1 : 1)) {
+        if (sign * ((rhs.value < 0) ? -1 : 1) > 0) {
             long long x = rhs.value;
             sub_small((x < 0) ? -x : x);
             remove_zeroes();
@@ -409,7 +410,6 @@ big_integer &big_integer::operator-=(big_integer const &rhs) {
             return *this;
         }
     }
-    make_copy();
     if (sign * rhs.sign < 0) {
         return add(rhs);
     } else {
